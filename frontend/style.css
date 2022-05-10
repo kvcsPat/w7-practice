@@ -1,0 +1,34 @@
+#menu-btn {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+}
+
+#menu-btn::before, #menu-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: white;
+}
+
+#menu-btn::before {
+  margin-top: 5px;
+}
+
+#menu-btn::after {
+  margin-top: -5px;
+}
+
+#menu-btn.clicked {
+  background-color: gray;
+}
+/*# sourceMappingURL=style.css.map */

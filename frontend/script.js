@@ -12,7 +12,15 @@ const loadEvent = function () {
     const menuButtonElement = document.getElementById("menu-btn");
 
     menuButtonElement.addEventListener("click", function (event) {
-        event.currentTarget.classList.toggle("clicked")
+        //event.currentTarget.classList.toggle("clicked")
+
+        /*
+        console.log(rootElement);
+        console.log(event.currentTarget.parentElement);
+        console.log(event.currentTarget.closest("#root"))
+        */
+
+       event.currentTarget.closest("#root").classList.toggle("menu-opened")
     })
 }
 
